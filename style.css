@@ -33,6 +33,7 @@ nav {
     backdrop-filter: blur(6px);
 }
 
+/* Navbar links */
 nav a {
     color: white;
     text-decoration: none;
@@ -45,16 +46,22 @@ nav a:hover {
     color: #ffdd57;
 }
 
-/* Ensure navbar list has no arrows or bullets */
+/* Navbar UL & LI clean */
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;  /* remove bullets/arrows */
     gap: 20px;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
 }
 
+nav ul li {
+    list-style: none;  /* ensures no bullet/arrows */
+}
+
+/* Definite removal of pseudo arrows in navbar */
 nav ul li::before {
-    content: none; /* Remove arrows */
+    content: none !important;
 }
 
 /* ==============================
@@ -152,13 +159,13 @@ a:hover {
 /* ==============================
    Lists
    ============================== */
-/* Remove default bullets for all lists */
+/* Remove default bullets globally */
 ul {
     list-style: none;
     padding-left: 0;
 }
 
-/* Add arrows only inside cards */
+/* Add arrows ONLY inside cards */
 .card ul li::before {
     content: "→";
     color: #0a66c2;
