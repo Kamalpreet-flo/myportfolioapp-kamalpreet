@@ -45,18 +45,29 @@ h2 {
 }
 
 /* Card style */
+/* Smaller Card */
 .card {
     background-color: #fff;
-    padding: 1.5rem;
-    margin: 1rem 0;
+    padding: 1rem;           /* reduced padding */
+    margin: 0.8rem 0;        /* slightly smaller margin */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);  /* smaller hover effect */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Profile Card - smaller image */
+.profile-card img {
+    width: 120px;               /* smaller width */
+    height: 120px;              /* smaller height */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid #0a66c2;  /* slightly thinner border */
 }
 
 /* Links */
