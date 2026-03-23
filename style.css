@@ -75,7 +75,7 @@ h2 {
 }
 
 #about .profile-card img {
-    width: 120px;             /* smaller, round image */
+    width: 120px;             
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
@@ -87,6 +87,21 @@ h2 {
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
+}
+
+/* My Story Section - Centered cards */
+#story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#story .card {
+    max-width: 600px;
+    width: 100%;
+    text-align: left;  /* keep text readable */
+    padding: 1.2rem;
+    margin: 1rem 0;
 }
 
 /* Links */
