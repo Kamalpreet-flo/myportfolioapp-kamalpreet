@@ -4,7 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+#about {
+    display: flex;
+    justify-content: center; /* center horizontally */
+}
 
+#about .profile-card {
+    width: 100%;          /* make card responsive */
+    max-width: 500px;     /* limit max width so it doesn't stretch */
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
