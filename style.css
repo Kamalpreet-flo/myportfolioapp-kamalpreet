@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;  /* slightly tighter */
+    line-height: 1.4; /* tighter line spacing */
     background-color: #f4f4f9;
     color: #333;
     padding-top: 70px; /* navbar height */
@@ -19,7 +19,7 @@ nav {
     top: 0;
     width: 100%;
     background: rgba(10, 102, 194, 0.95);
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 1rem;
     text-align: center;
     z-index: 1000;
 }
@@ -30,11 +30,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline-block;
+    gap: 12px;
 }
 
 nav ul li::before {
@@ -45,8 +41,8 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.95rem;
-    transition: 0.3s;
+    font-size: 0.9rem;
+    transition: 0.2s;
 }
 
 nav a:hover {
@@ -57,29 +53,31 @@ nav a:hover {
 header {
     background-color: #0a66c2;
     color: #fff;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem; /* smaller padding */
     text-align: center;
 }
 
 header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.3rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
 }
 
 header p {
     font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Sections */
 section {
     max-width: 900px;
-    margin: 1rem auto;  /* smaller vertical margin */
+    margin: 0.5rem auto; /* smaller vertical margin */
     padding: 0 1rem;
 }
 
+/* Headings */
 h2 {
     color: #0a66c2;
-    margin-bottom: 0.8rem; /* smaller gap under heading */
+    margin-bottom: 0.5rem; /* smaller gap */
     border-bottom: 2px solid #0a66c2;
     display: inline-block;
     padding-bottom: 0.2rem;
@@ -88,27 +86,26 @@ h2 {
 /* Cards */
 .card {
     background-color: #fff;
-    padding: 0.8rem; /* slightly smaller padding */
-    margin: 0.5rem 0; /* reduce space between cards */
+    padding: 0.5rem; /* smaller padding */
+    margin: 0.3rem 0; /* reduce spacing between cards */
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
 
 /* About Section */
 #about .profile-card {
     text-align: center;
-    padding: 15px;
+    padding: 12px; /* smaller padding */
     border-radius: 8px;
     background-color: #fff;
     max-width: 400px;
     margin: auto;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 #about .profile-card img {
@@ -116,7 +113,7 @@ h2 {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     border: 2px solid #0a66c2;
 }
 
@@ -148,8 +145,8 @@ ul {
 footer {
     background-color: #eee;
     text-align: center;
-    padding: 0.8rem;
-    margin-top: 1rem; /* reduce footer spacing */
+    padding: 0.6rem;
+    margin-top: 0.8rem;
     font-size: 0.85rem;
 }
 
