@@ -11,7 +11,7 @@ body {
     background-color: #f4f4f9;
     color: #333;
 
-    /* IMPORTANT: prevents navbar overlap */
+    /* prevents navbar overlap */
     padding-top: 80px;
 }
 
@@ -21,7 +21,7 @@ nav {
     top: 0;
     width: 100%;
     background: rgba(10, 102, 194, 0.95);
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -125,11 +125,12 @@ a:hover {
 
 /* Lists */
 ul {
-    list-style-type: none;
+    list-style-type: none; /* remove bullets/arrows globally */
     padding-left: 0;
 }
 
-ul li::before {
+/* Optional: arrows for card lists only */
+.card ul li::before {
     content: "→";
     color: #0a66c2;
     padding-right: 0.5rem;
