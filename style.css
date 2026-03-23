@@ -1,6 +1,4 @@
-/* ==============================
-   Reset & Base Styles
-   ============================== */
+/* Reset & base styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +11,11 @@ body {
     background-color: #f4f4f9;
     color: #333;
 
-    /* Prevents navbar overlap */
+    /* prevents navbar overlap */
     padding-top: 80px;
 }
 
-/* ==============================
-   NAVBAR
-   ============================== */
+/* NAVBAR */
 nav {
     position: fixed;
     top: 0;
@@ -45,21 +41,7 @@ nav a:hover {
     color: #ffdd57;
 }
 
-/* Ensure navbar list has no arrows or bullets */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding-left: 0;
-}
-
-nav ul li::before {
-    content: none; /* Remove arrows */
-}
-
-/* ==============================
-   Header
-   ============================== */
+/* Header */
 header {
     background-color: #0a66c2;
     color: #fff;
@@ -76,9 +58,7 @@ header p {
     font-size: 1.2rem;
 }
 
-/* ==============================
-   Sections
-   ============================== */
+/* Sections */
 section {
     max-width: 900px;
     margin: 2rem auto;
@@ -93,9 +73,7 @@ h2 {
     padding-bottom: 0.3rem;
 }
 
-/* ==============================
-   Cards
-   ============================== */
+/* Cards */
 .card {
     background-color: #fff;
     padding: 1rem;
@@ -110,9 +88,7 @@ h2 {
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* ==============================
-   About Section
-   ============================== */
+/* About Section */
 #about {
     display: flex;
     justify-content: center;
@@ -136,9 +112,7 @@ h2 {
     border: 3px solid #0a66c2;
 }
 
-/* ==============================
-   Links
-   ============================== */
+/* Links */
 a {
     color: #0a66c2;
     text-decoration: none;
@@ -149,36 +123,24 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ==============================
-   Lists
-   ============================== */
-/* Remove default bullets for all lists */
+/* Lists */
 ul {
-    list-style: none;
+    list-style-type: none; /* remove bullets/arrows globally */
     padding-left: 0;
 }
 
-/* Add arrows only inside cards */
+/* Optional: arrows for card lists only */
 .card ul li::before {
     content: "→";
     color: #0a66c2;
     padding-right: 0.5rem;
 }
 
-/* ==============================
-   Footer
-   ============================== */
+/* Footer */
 footer {
     background-color: #eee;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
     font-size: 0.9rem;
-}
-
-/* ==============================
-   Smooth Scrolling
-   ============================== */
-html {
-    scroll-behavior: smooth;
 }
