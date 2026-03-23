@@ -4,15 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-#about {
-    display: flex;
-    justify-content: center; /* center horizontally */
-}
 
-#about .profile-card {
-    width: 100%;          /* make card responsive */
-    max-width: 500px;     /* limit max width so it doesn't stretch */
-}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -52,30 +44,49 @@ h2 {
     padding-bottom: 0.3rem;
 }
 
-/* Card style */
 /* Smaller Card */
 .card {
     background-color: #fff;
-    padding: 1rem;           /* reduced padding */
-    margin: 0.8rem 0;        /* slightly smaller margin */
+    padding: 1rem;
+    margin: 0.8rem 0;
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-3px);  /* smaller hover effect */
+    transform: translateY(-3px);
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* Profile Card - smaller image */
-.profile-card img {
-    width: 120px;               /* smaller width */
-    height: 120px;              /* smaller height */
+/* About Section - Centered */
+#about {
+    display: flex;
+    justify-content: center;  /* center horizontally */
+}
+
+#about .profile-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: white;
+    max-width: 500px;        /* smaller, centered card */
+}
+
+#about .profile-card img {
+    width: 120px;             /* smaller, round image */
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 12px;
-    border: 3px solid #0a66c2;  /* slightly thinner border */
+    border: 3px solid #0a66c2;
+}
+
+#about .profile-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* Links */
@@ -108,30 +119,4 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
     font-size: 0.9rem;
-}
-
-/* Profile Card */
-.profile-card {
-    text-align: center;       /* Center text and image */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    background-color: white;
-    margin: 20px auto;
-    max-width: 600px;         /* Keeps content centered and not too wide */
-}
-
-.profile-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;       /* Makes it round */
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 4px solid #0a66c2; /* Optional border color */
-}
-
-.profile-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
 }
